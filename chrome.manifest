@@ -1,0 +1,8 @@
+content zoteroaoijpreise chrome/content/
+
+overlay chrome://zotero/content/zoteroPane.xul chrome://zoteroaoijpreise/content/overlay.xul
+
+locale  zoteroaoijpreise  en-US   chrome/locale/en-US/
+locale  zoteroaoijpreise  de   chrome/locale/de/
+
+skin    zoteroaoijpreise  default chrome/skin/default/image/

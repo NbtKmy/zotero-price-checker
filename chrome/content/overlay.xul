@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE overlay SYSTEM "chrome://zoteroaoijpreise/locale/overlay.dtd">
+
+<overlay
+    id="zoteroaoijpreise"
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+    <script src="chrome://zoteroaoijpreise/content/scripts/zoteroaoijpreise.js"/>
+    <script src="chrome://zotero/content/include.js"/>
+
+    <popup
+        id="zotero-itemmenu">
+        <menu class="menu-iconic" image="chrome://zoteroaoijpreise/skin/glass.png" id="zotero-itemmenu-zoteroaoijpreise-menu" label="&zotero.zoteroaoijpreise.menu.label;">
+            <menupopup id="zotero-itemmenu-zoteroaoijpreise-menupopup">
+                <menuitem
+                    id="zotero-itemmenu-zoteroaoijpreise-check"
+                    label="&zotero.zoteroaoijpreise.pricelookup.label;"
+                    oncommand="zoteroaoijpreiseLookup()"/>
+            </menupopup>
+        </menu>
+    </popup>
+</overlay>
+
+<!--Bild von Pixabay, suche nach Magnifying Glass-->
