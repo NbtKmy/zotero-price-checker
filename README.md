@@ -3,7 +3,7 @@ With this Zotero add-on, you can check the price of Japanese books with ISBN-num
 Download the file 'zoteroaoijpreise-1.0.0.xpi' and add it in your Zotero as add-on.  
 
 After the successful adding on, you can pick the items up and check the prices of them.  
-The add-on uses the API of [OpenDB](https://openbd.jp/) and searchs for the price with ISBN.  
+The add-on uses the API of [OpenBD](https://openbd.jp/) and searchs for the price with ISBN.  
 The type of item in Zotero must be "book".  
 The add-on gives following responses:
 
