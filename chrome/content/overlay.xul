@@ -11,7 +11,7 @@
 
     <popup
         id="zotero-itemmenu">
-        <menu class="menu-iconic" image="chrome://zoteroaoijpreise/skin/glass.png" id="zotero-itemmenu-zoteroaoijpreise-menu" label="&zotero.zoteroaoijpreise.menu.label;">
+        <menu class="menu-iconic" image="chrome://zoteroaoijpreise/skin/coin_kinka.png" id="zotero-itemmenu-zoteroaoijpreise-menu" label="&zotero.zoteroaoijpreise.menu.label;">
             <menupopup id="zotero-itemmenu-zoteroaoijpreise-menupopup">
                 <menuitem
                     id="zotero-itemmenu-zoteroaoijpreise-check"
