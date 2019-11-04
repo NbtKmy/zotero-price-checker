@@ -7,13 +7,13 @@ The add-on uses the API of [OpenDB](https://openbd.jp/) and search for the item 
 The type of item must be "book".  
 The add-on gives following responses:
 
-1. Case 1: ISBN absent - add a Tag with "ISBNがありません" and put the value "0" in the "extra" field.  
-1. Case 2: ISBN exists, but no response from API - add a Tag "OpenDBに記載がありません" and put the value "0" in the "extra" field.
+1. Case 1: ISBN absent - add a tag with "ISBNがありません" and put the value "0" in the "extra" field.  
+1. Case 2: ISBN exists, but no response from API - add a tag "OpenDBに記載がありません" and put the value "0" in the "extra" field.
 1. Case 3: ISBN exists, and there is a response from API
-  1. Case 3-1: There is only one ISBN, the response includes no price information - add a Tag with "古書価格を確認してください" and put the value "0" in the "extra" field.
-  1. Case 3-2: There is only one ISBN, the resopnse incluses a price information - put the price in the "extra" field.
-  1. Case 3-3: There are more than one ISBN numbers in one item, each response includes a price information - put the sum of these prices in the "extra" field.
-  1. Case 3-4: The are more than one ISBN numbers in one item, some responses includes p price iformation, some not - put the sum of these prices in the "extra" field and add a Tag with "[ISBN]には値段がありません" for each ISBN number for which no price information exists.
+　1. Case 3-1: There is only one ISBN, the response includes no price information - add a tag with "古書価格を確認してください" and put the value "0" in the "extra" field.
+　1. Case 3-2: There is only one ISBN, the resopnse incluses a price information - put the price in the "extra" field.
+　1. Case 3-3: There are more than one ISBN numbers in one item, and each response includes a price information - put the sum of these prices in the "extra" field.
+　1. Case 3-4: The are more than one ISBN numbers in one item, some responses includes price iformation, some not - put the sum of these prices in the "extra" field and add a tag with "[ISBN]には値段がありません" for each ISBN number for which no price information exists.
 
 ## Customizing and build  
 If you want to customize this add-on, you can do it as follows:  
