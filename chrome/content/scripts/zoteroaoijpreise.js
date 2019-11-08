@@ -24,13 +24,13 @@ async function zoteroaoijpreiseLookup() {
 		        if (json_data && x == 1) { // if you have only one ISBN...
 		              var price_or1 = json_data[0].onix.ProductSupply.SupplyDetail.Price
 
-		              if(typeof price_or1 !== 'undefined') {
+		              if(price_or1) {
 		                var Price = json_data[0].onix.ProductSupply.SupplyDetail.Price[0].PriceAmount;
 		                console.log(Price);
 		                item.setField('extra', Price);
 		                await item.saveTx();
 		              }
-		              else if (typeof price_or1 == 'undefined') {
+		              else if (typeof price_or1 === 'undefined' || price_or1 === null) {
 		                //console.log("古書価格を確認")
 		                item.setField('extra', 0);
 		                await item.saveTx();
@@ -44,12 +44,12 @@ async function zoteroaoijpreiseLookup() {
 
 		                var price_or2 = json_data[i].onix.ProductSupply.SupplyDetail.Price
 
-		                if (typeof price_or2 !== 'undefined') {
+		                if (price_or2) {
 		                    var price_i = json_data[i].onix.ProductSupply.SupplyDetail.Price[0].PriceAmount;
 		                    var price_num = Number(price_i);
 		                    prices.push(price_num);
 		                  }
-		                  else if (typeof price_or2 == 'undefined') {
+		                  else if (typeof price_or2 == 'undefined' || price_or2 === null) {
 		                    prices.push(0);
 		                    item.addTag(isbns[i]+'には値段がありません');
 		                    await item.saveTx();
@@ -62,7 +62,7 @@ async function zoteroaoijpreiseLookup() {
 		          item.setField('extra', sum);
 		          await item.saveTx();
 		      }
-		      else { // if you get the response "null" from OpenDB
+		      else if (json_data === null){ // if you get the response "null" from OpenDB
 		        //console.log("null");
 		        item.addTag('OpenDBに記載がありません');
 		        await item.saveTx();
