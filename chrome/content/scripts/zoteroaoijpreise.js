@@ -62,7 +62,7 @@ async function zoteroaoijpreiseLookup() {
 		          item.setField('extra', sum);
 		          await item.saveTx();
 		      }
-		      else if (json_data === null){ // if you get the response "null" from OpenDB
+		      else if (!json_data){ // if you get the response "null" from OpenDB
 		        //console.log("null");
 		        item.addTag('OpenDBに記載がありません');
 		        await item.saveTx();
