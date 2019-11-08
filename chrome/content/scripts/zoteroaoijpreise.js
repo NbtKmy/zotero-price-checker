@@ -26,7 +26,7 @@ async function zoteroaoijpreiseLookup() {
 
 		              if(price_or1) {
 		                var Price = json_data[0].onix.ProductSupply.SupplyDetail.Price[0].PriceAmount;
-		                console.log(Price);
+		                //console.log(Price);
 		                item.setField('extra', Price);
 		                await item.saveTx();
 		              }
@@ -49,7 +49,7 @@ async function zoteroaoijpreiseLookup() {
 		                    var price_num = Number(price_i);
 		                    prices.push(price_num);
 		                  }
-		                  else if (typeof price_or2 == 'undefined' || price_or2 === null) {
+		                  else if (typeof price_or2 === 'undefined' || price_or2 === null) {
 		                    prices.push(0);
 		                    item.addTag(isbns[i]+'には値段がありません');
 		                    await item.saveTx();
