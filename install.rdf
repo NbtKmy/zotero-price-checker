@@ -7,7 +7,7 @@
         RDF:about="urn:mozilla:install-manifest"
         em:id="nbtkmy_priceChecker@j-images.ch"
         em:name="Preis-Checker mit OpenDB"
-        em:version="1.0.1"
+        em:version="1.1.0"
         em:type="2"
         em:creator="Nobutake Kamiya"
         em:description="Zotero-Plugin zum Preis-Checken"
@@ -17,7 +17,7 @@
             <Description>
                 <em:id>zotero@chnm.gmu.edu</em:id>
                 <em:minVersion>5.0.0</em:minVersion>
-                <em:maxVersion>6.*</em:maxVersion>
+                <em:maxVersion>7.*</em:maxVersion>
             </Description>
         </em:targetApplication>
     </RDF:Description>
