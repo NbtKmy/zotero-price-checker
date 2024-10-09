@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "Preis-Checker mit OpenDB",
+  "version": "1.1.0",
+  "description": "Check the japanese book prices through OpenDB",
+  "author": "NbtKmy",
+  "icons": {
+      "48": "coin_kinka.png"
+    },
+  "applications": {
+    "zotero": {
+      "id": "priceChecker@j-images.ch",
+      "strict_min_version": "6.999",
+      "strict_max_version": "7.0.*"
+    }
+  }
+}

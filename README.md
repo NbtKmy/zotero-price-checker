@@ -19,4 +19,4 @@ The add-on gives following responses:
 If you want to customize this add-on, you can do it as follows:  
 1. Get the folder 'chrome', and files like 'chrome.manifest' and 'install.rdf' from this repository.  
 1. Change the codes as you like  
-1. Build the xpi-file with `zip -r zoteroaoijpreise-1.0.0.xpi chrome/* chrome.manifest install.rdf`  
+1. Build the xpi-file with `zip -r pricechecker-1.1.0.xpi src/*`  

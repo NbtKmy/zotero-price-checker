@@ -1,0 +1,3 @@
+priceChecker =
+    .label = Get price
+
